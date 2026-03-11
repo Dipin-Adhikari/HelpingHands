@@ -1,6 +1,6 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import PromptTemplate
-from langchain.output_parsers import StructuredOutputParser, ResponseSchema
+from langchain_classic.output_parsers import ResponseSchema, StructuredOutputParser
 from pinecone import Pinecone
 from pinecone_text.sparse import BM25Encoder
 from typing import List, Dict, Tuple

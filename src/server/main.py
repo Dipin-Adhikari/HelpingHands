@@ -7,9 +7,12 @@ from dotenv import load_dotenv
 from pinecone import Pinecone
 from pinecone_text.sparse import BM25Encoder
 from langchain_huggingface import HuggingFaceEmbeddings
-from generator.generator import rag_chat, clear_chat_history
-from retriever.retriever import initialize_reranker
+
 import torch
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from retriever.retriever import initialize_reranker
+from generator.generator import rag_chat, clear_chat_history
 
 # ============================================
 # STARTUP: Load all models once at server start

@@ -1,4 +1,5 @@
 projenv
+myvenv
 __pycache__
 .env
 src/vectordb
